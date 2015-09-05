@@ -33,19 +33,19 @@ void otpInstall::installActionWidgetShow(){
 }
 
 void otpInstall::installDirectoryWidgetShow(){
-    ;
+    installStackedWidget->setCurrentIndex(3);
 }
 
 void otpInstall::installDatabaseWidgetShow(){
-    ;
+    installStackedWidget->setCurrentIndex(4);
 }
 
 void otpInstall::installProgressWidgetShow(){
-    ;
+    installStackedWidget->setCurrentIndex(5);
 }
 
 void otpInstall::installSummaryWidgetShow(){
-    ;
+    installStackedWidget->setCurrentIndex(6);
 }
 
 void otpInstall::nextButtonClick(){
@@ -54,12 +54,16 @@ void otpInstall::nextButtonClick(){
         finishButton->setEnabled(true);
     } else if(installProgress->isEnabled()){
         installSummary->setEnabled(true);
+        installSummaryWidgetShow();
     } else if(installDatabase->isEnabled()){
         installProgress->setEnabled(true);
+        installProgressWidgetShow();
     } else if(installDirectory->isEnabled()){
         installDatabase->setEnabled(true);
+        installDatabaseWidgetShow();
     } else if(installAction->isEnabled()){
         installDirectory->setEnabled(true);
+        installDirectoryWidgetShow();
     } else if(installType->isEnabled()){
         installAction->setEnabled(true);
         installActionWidgetShow();
@@ -75,10 +79,13 @@ void otpInstall::backButtonClick(){
     if(installSummary->isEnabled()){
         finishButton->setEnabled(false);
         installSummary->setEnabled(false);
+        installProgressWidgetShow();
     } else if(installProgress->isEnabled()){
         installProgress->setEnabled(false);
+        installDatabaseWidgetShow();
     } else if(installDatabase->isEnabled()){
         installDatabase->setEnabled(false);
+        installDirectoryWidgetShow();
     } else if(installDirectory->isEnabled()){
         installDirectory->setEnabled(false);
         installActionWidgetShow();

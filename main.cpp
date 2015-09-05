@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 
     otpInstall w;
     w.show ();
+    w.setFixedSize(800,600);
     /*
     otpsetup w;
     w.show();
