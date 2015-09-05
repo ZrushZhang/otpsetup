@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/arrow.png</file>
+        <file>qss/otpsetup.qss</file>
+        <file>images/file.png</file>
+        <file>images/releaseinfo.png</file>
+        <file>images/welcome.png</file>
+        <file>images/install.png</file>
+        <file>images/test.png</file>
+        <file>files/releaseInfo.html</file>
+        <file>files/welcome.html</file>
+        <file>files/install.html</file>
+    </qresource>
+</RCC>
