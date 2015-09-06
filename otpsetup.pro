@@ -9,16 +9,21 @@ QT += core gui webkit
 TARGET = otpsetup
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
         otpsetup.cpp \
-    otpinstall.cpp
+    otpinstall.cpp \
+    otpexist.cpp \
+    otpfeature.cpp
 
 HEADERS  += otpsetup.h \
-    otpinstall.h
+    otpinstall.h \
+    otpexist.h \
+    otpfeature.h
 
 FORMS    += otpsetup.ui \
-    otpinstall.ui
+    otpinstall.ui \
+    otpexist.ui \
+    otpfeature.ui
 
 RESOURCES += \
     otpsetup.qrc

@@ -10,5 +10,7 @@
         <file>files/releaseInfo.html</file>
         <file>files/welcome.html</file>
         <file>files/install.html</file>
+        <file>images/treeitem_folder.png</file>
+        <file>images/treeitem_project.png</file>
     </qresource>
 </RCC>

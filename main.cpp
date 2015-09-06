@@ -3,6 +3,8 @@
 #include <QFile>
 #include "otpsetup.h"
 #include "otpinstall.h"
+#include "otpexist.h"
+#include "otpfeature.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,13 +19,21 @@ int main(int argc, char *argv[])
     file.open(QFile::ReadOnly);
     app.setStyleSheet(file.readAll());
 
+    /*
     otpInstall w;
     w.show ();
     w.setFixedSize(800,600);
-    /*
+
     otpsetup w;
     w.show();
     */
-    
+    /*
+    otpExist w;
+    w.show();
+    */
+
+    otpFeature w;
+    w.show();
+
     return app.exec();
 }
